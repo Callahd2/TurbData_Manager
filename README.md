@@ -1,6 +1,6 @@
-==============================================
-==        TurbData Manager (TDM) 	    ==
-==============================================
+
+###TurbData Manager (TDM)
+
 **TurbData Manager (TDM)** is a Python-based application for managing **large-scale turbulence datasets** from the [Johns Hopkins Turbulence Database (JHTDB)](http://turbulence.pha.jhu.edu/).  
 It provides a **PyQt6 graphical interface** and a modular backend that enables researchers and engineers to query, organize, and resume downloads of multi-gigabyte datasets for **CFD and machine learning research**.
 
@@ -15,9 +15,8 @@ This project does **not** provide one — you must request your own from the [Jo
 Once obtained, enter your token into the GUI when prompted.
 
 
-==============================================
-==		Features 	            ==
-==============================================
+###Features
+
 - **PyQt6 GUI** for intuitive dataset creation, browsing, and file management
 - **Resumable queries**: pause/resume long dataset downloads without data loss
 - **Chunked queries** with adaptive retry logic to handle JHTDB limits
@@ -28,10 +27,15 @@ Once obtained, enter your token into the GUI when prompted.
   - Load existing sessions and continue querying
   - Maintain a searchable log of all datasets
 
+ 
+  ### Attribution
+This project uses components of the Johns Hopkins Turbulence Database (JHTDB) API, 
+© Johns Hopkins University, which are licensed separately under Apache 2.0.
 
-==============================================
-==		Quick Start 	            ==
-==============================================
+
+
+###Quick Start
+
 
 # Installation
 ```bash
@@ -52,7 +56,7 @@ python src/Controllers/MainWindowController.py
 
 
 ==============================================
-==	      Project Structure             ==
+==	      Project Structure                 ==
 ==============================================
 TurbData-Manager/
 ├── src/                    # Source code

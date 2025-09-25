@@ -33,7 +33,7 @@ Once obtained, enter your token into the GUI when prompted.
 TurbData Manager (TDM) converts a **large 4D dataset** (3D spatial volume × time) into manageable **spatial-temporal queries**.  
 This allows multi-gigabyte turbulence datasets to be downloaded reliably and stored incrementally.  
 
-![Chunking Visualization](images/ChunkingVisualization.jpg)
+![Chunking Visualization](images/ChunkingVisualization.JPG)
 
 ### Querying Sequence
 1. **User defines spatial-temporal bounds** (x, y, z, t) and resolution.  

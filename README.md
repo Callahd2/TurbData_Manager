@@ -43,7 +43,7 @@ Below are some of the key windows and features:
 
 
 ## Intuitive File Structure - Manageable file structure to easily find and use downloaded datasets.
-![File Structure](images/snapshot_files.PNG)
+![File Structure](images/snapshot_files.png)
 
  
 

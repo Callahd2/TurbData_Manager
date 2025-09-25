@@ -36,7 +36,7 @@ JHTDB code remain with their original authors.
 
 
 
-# Installation
+# Quick Start
 ```bash
 # Clone the repository
 git clone https://github.com/<your-username>/TurbData-Toolkit.git

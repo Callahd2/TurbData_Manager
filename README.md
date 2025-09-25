@@ -8,7 +8,7 @@ It provides a **PyQt6 graphical interface** and a modular backend that enables r
 **Pre-Release Notice**  
 This project is currently in **pre-release development**.  
 It is not production ready, and features may change significantly before the first stable release.
-The only JHTDB dataset currently available for querying is "Channel." Other JHTDB datasets will be available for querying through TDM in future versions. 
+The only JHTDB dataset currently available for querying is "Channel." Other JHTDB datasets will be available for querying through TDM in future versions. Info on this dataset can be found [here.]{https://turbulence.idies.jhu.edu/datasets/wallBoundedTurbulence/channelFlow}
 
 **Authentication**
 An API token is **required** to use the JHTDB.  

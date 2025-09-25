@@ -26,6 +26,25 @@ Once obtained, enter your token into the GUI when prompted.
   - Create new dataset series with custom grid/time bounds
   - Load existing sessions and continue querying
   - Maintain a searchable log of all datasets
+
+
+TurbData Manager (TDM) provides a PyQt6 graphical interface for managing turbulence dataset queries.
+Below are some of the key windows and features:
+
+## Main Window – Central control panel with session management, progress tracking, and live query status.
+![Main Window and Advanced Windows](advanced_panels.PNG)
+
+## New Session Dialog – Define dataset constraints, spatial-temporal bounds, and grid resolution before launching a query.
+![Create New Dataset Query Session](create_new_dataset.PNG)
+
+
+## Load Session Dialog – Browse and resume existing sessions with searchable metadata and dataset logs.
+![Search for and Load Existing Datasets](open_session_window.PNG)
+
+
+## Intuitive File Structure - Manageable file structure to easily find and use downloaded datasets.
+![File Structure](snapshot_files.PNG)
+
  
 
 ## How Querying Works

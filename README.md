@@ -26,6 +26,32 @@ Once obtained, enter your token into the GUI when prompted.
   - Create new dataset series with custom grid/time bounds
   - Load existing sessions and continue querying
   - Maintain a searchable log of all datasets
+ 
+
+## How Querying Works
+
+TurbData Manager (TDM) converts a **large 4D dataset** (3D spatial volume × time) into manageable **spatial-temporal queries**.  
+This allows multi-gigabyte turbulence datasets to be downloaded reliably and stored incrementally.  
+
+![Chunking Visualization](docs/images/ChunkingVisualization.png)
+
+### Querying Sequence
+1. **User defines spatial-temporal bounds** (x, y, z, t) and resolution.  
+2. The program splits the spatial domain into **subvolumes** (chunks).  
+3. For each **temporal point**:
+   - A new **HDF5 file** is created to represent that snapshot in time.  
+   - The dataset is queried chunk by chunk.  
+   - Each **spatial chunk** is immediately written to its correct location inside the HDF5 file (no need to hold the entire dataset in memory).  
+4. The process repeats for every time index until the entire spatial-temporal volume is complete.  
+5. If paused or interrupted, TDM resumes from the last completed chunk or temporal file.  
+
+### Key Concepts
+- **Spatial-Temporal Points**: Each dataset consists of millions of points in (x, y, z, t) space.  
+- **Chunks**: Subdivisions of the 3D spatial domain that fit within API request limits.  
+- **HDF5 Snapshots**: Each `.h5` file corresponds to **one temporal point**. It contains all spatial chunks stitched together into a complete 3D field.  
+- **Resume Capability**: Because chunks are written directly to disk, the query can pause/resume without losing progress.  
+
+
 
 ## Attribution
 This project makes use of the Johns Hopkins Turbulence Database (JHTDB) 
